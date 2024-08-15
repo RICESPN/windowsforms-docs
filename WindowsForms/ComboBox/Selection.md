@@ -43,10 +43,9 @@ private void SfComboBox1_SelectedIndexChanged(object sender, EventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-sfComboBox1.SelectedValueChanged += new EventHandler(SfComboBox1_SelectedValueChanged);
-private void SfComboBox1_SelectedValueChanged(object sender, EventArgs e)
-{
-}
+ sfComboBox1.SelectedValueChanged += New EventHandler(AddressOf SfComboBox1_SelectedValueChanged)
+Private Sub SfComboBox1_SelectedValueChanged(ByVal sender As Object, ByVal e As EventArgs)
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
